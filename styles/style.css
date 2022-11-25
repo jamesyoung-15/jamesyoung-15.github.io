@@ -154,6 +154,9 @@ header{
 .home-text h1{
     color: var(--color-purple);
 }
+.home-text h2{
+    padding-bottom: 4%;
+}
 .home-text p{
     margin-bottom: 1.5rem;
     font-weight: 500;
@@ -258,7 +261,6 @@ header{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 0px;
-    margin-top: 2%;
     display: flex;
     flex-direction: row;
 }
