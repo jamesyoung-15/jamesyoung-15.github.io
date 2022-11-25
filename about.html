@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>James' Portfolio Website</title>
         <link href="styles/style.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +17,8 @@
             <div class="nav container">
                 <a href="#" class="topbar-title">James</a>
                     <ul class="navbar">
-                        <li><a href="#" class="nav-link">Home</a></li>
-                        <li><a href="about.html" class="nav-link">About</a></li>
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
                         <li><a href="https://github.com/jamesyoung-15/resume/blob/main/resume_2.pdf" target="_blank" class="nav-link">Resume</a></li>
                     </ul>
                     <div class = "menu-icon">
@@ -27,15 +28,12 @@
                     </div>
             </div>
         </div>
-        <!--Hello section-->
         <header>
             <div class="home-content">
                 <div class="myimage">
                     <img src="images/myphoto.png" alt="My Pic" width="235" height="235">
                 </div>
                 <div class="home-text">
-                    <h1 class="bigheader">Hello!</h1>
-                    <p>Hi! My name is James and I'm currently studying Electronic Engineering at HKUST.</p>
                     <div class="social">
                         <a href="https://github.com/jamesyoung-15/" target="_blank"><i class="bx fa-brands fa-github"></i></i></a>
                         <a href="https://www.linkedin.com/in/jamesyyoung/" target="_blank"><i class="bx fa-brands fa-linkedin"></i></i></a>
@@ -45,26 +43,22 @@
             </div>  
         </header>
         <!--About Me-->
-        <!--Projects-->
-        <section class="projects">
+        <section class="aboutme">
             <div class="section-title">
-                <h2>My Projects</h2>
+                <h2>About Me</h2>
             </div>
-            <div class="project-container">
-                <div class="project-box">
-                    <h2>HTTP Server</h2>
-                    <p>Simple HTTP server from scratch written in C. The server can serve static HTML pages as well as a image files such as png, gifs,etc. Uses concepts of socket programming and HTTP protocol to implement server.</p>
-                    <a href="https://github.com/jamesyoung-15/http-server" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="project-box">
-                    <h2>ESP32 IoT Temperature Monitor</h2>
-                    <p>IoT project that takes the temperature and humidity detected by a KY-015 sensor module and displays it to a HTML webpage through via a ESP32 chip. Coded in C and developed with ESP-IDF framework.</p>
-                    <a href="https://github.com/jamesyoung-15/esp32-dht11-server" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-                <div class="project-box">
-                    <h2>Home Server</h2>
-                    <p>Running a home lab with a Ubuntu bare metal server that hosts applications such as Nextcloud, Jellyfin, Nginx Reverse Proxy Manager, and so on through Docker containers.</p>
-                    <a href="https://github.com/jamesyoung-15/homeserver" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <div class="aboutme-content">
+                <div class="aboutme-text">
+                    <p>
+                        Hello! My name is James and I am a third year student studying Electronic Engineering at The Hong Kong University of Science and Technology (HKUST). 
+                        <br><br>I have a passion for learning about computer networking, Linux (I use Arch btw), programming, and computer hardware. To see some projects I have done in my free time, feel free to check my projects on the homepage.
+                        <br><br>
+                        My other hobbies include playing football (part of the HKUST football team) and videogames.
+                        <br><br>
+                        Anyways feel free to get in touch via the contact info above!
+                    </p>
+
+                <div class="aboutme-img">
                 </div>
             </div>
         </section>

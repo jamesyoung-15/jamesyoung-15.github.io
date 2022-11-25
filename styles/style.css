@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 :root{
@@ -33,6 +34,7 @@ a{
     left:0;
     width: 100%;
     z-index: 100;
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .75);
 }
 
 .nav{
@@ -79,6 +81,7 @@ a{
     color: var(--color-purple);
     transition: all 0.3s linear;
 }
+/*Navbar END*/
 
 /*Hamburger menu*/
 .menu-icon{
@@ -108,8 +111,9 @@ a{
 .move .line3{
     transform: rotate( 45deg) translate(-5px,-5px);
 }
+/*Hamburger END*/
 
-/*Home content stuff*/
+/*Home content START*/
 header{
     min-height: 600px;
     display: flex;
@@ -171,3 +175,123 @@ header{
     color: var(--color-purple);
     transition: all 0.3s linear;
 }
+/*Home content END*/
+
+/*Body Page START*/
+.section-title{
+    text-align: center;
+    color: var(--color-foreground);
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+/*Projects START*/
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10%;
+    margin: 0px auto;
+    max-width: 1040px;
+    position: relative;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: stretch center;
+    gap: 50px;
+}
+.project-box{
+    color: var(--color-foreground);
+    border-radius: 15px;
+    text-align: center;
+    background: rgb(19, 19, 30);
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+}
+.project-box h2{
+    z-index: 30;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.project-box p{
+    width: 100%;
+    padding: 18px 0px;
+    color: rgb(196, 196, 196);
+    line-height: 24px;
+    text-align: left;
+}
+
+.project-box a{
+    font-size: 25px;
+    color: var(--color-foreground);
+}
+
+.project-box i:hover{
+    color: var(--color-purple);
+}
+.project-tags{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+/*Projects END*/
+
+/*About Me START*/
+.aboutme{
+    margin-top: -50px;
+    padding-bottom: 7rem;
+}
+.aboutme-content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0px;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.aboutme-text p{
+    color: var(--color-foreground);
+    font-size: 2vh;
+    font-weight: 300;
+    line-height: 1.6;
+    
+}
+.aboutme-img{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    columns: 0.5rem;
+}
+.social-about .bx{
+    font-size: 1.2rem;
+    padding: 11px;
+    border-radius: 50%;
+    color: var(--color-foreground);
+    background-color: #171b3c;
+    margin: 0 3px;
+}
+.social-about .bx:hover{
+    color: var(--color-purple);
+    transition: all 0.3s linear;
+}
+/*About Me END*/
