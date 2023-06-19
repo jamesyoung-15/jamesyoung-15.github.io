@@ -1,5 +1,6 @@
-let menu = document.querySelector(".menu-icon");
+const menu = document.querySelector(".nav-hamburger");
+const navBarItems = document.getElementsByClassName('nav-items')[0]
 
 menu.onclick = () =>{
-    menu.classList.toggle("move");
+    navBarItems.classList.toggle("active");
 }

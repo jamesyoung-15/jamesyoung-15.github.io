@@ -9,19 +9,22 @@
     <script src="https://kit.fontawesome.com/2e277278ff.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Nav Bar -->
     <header>
         <nav class="nav-bar">
             <a href="#" class="nav-logo">James</a>
-            <ul>
-                <li><a href=""><i class="fa-solid fa-house-user"></i> Home</a></li>
-                <li><a href=""><i class="fa-solid fa-address-card"></i> About</a></li>
-                <li><a href=""><i class="fa-solid fa-file-pdf"></i> CV</a></li>
-            </ul>
             <i class="fa-solid fa-bars nav-hamburger"></i>
+            <ul class="nav-items">
+                <li><a href="#"><i class="fa-solid fa-house-user"></i> Home</a></li>
+                <li><a href="./about.html"><i class="fa-solid fa-address-card"></i> About</a></li>
+                <li><a href="" target="_blank"><i class="fa-solid fa-file-pdf"></i> CV</a></li>
+            </ul>
+            
         </nav>
     </header>
-    
+    <!-- Main page -->
     <main>
+        <!-- About section -->
         <section class="about" id="about">
             <div class="about-greeting">
                 <div class="about-img">
@@ -29,91 +32,154 @@
                 </div>
                 <!-- <h3>Hello! I am</h3> -->
                 <h1>James Young</h1>
-                <p>Electronic engineering student at HKUST with a passion for software development and embedded systems. </p>
+                <!-- <p>Electronic engineering student at HKUST with a passion for software development, embedded systems, and Linux.</p> -->
+                <p>Third year electronic engineering student at HKUST with a passion for backend development.</p>
                 <div class="about-contact">
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                    <a href=""><i class="fa-solid fa-file-pdf"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
                 </div>
             </div>
         </section>
+        <!-- Projects section -->
         <section class="projects">
-            <h2>Notable Projects</h2>
-            <div class="projects-container">
-                <div class="project-item">
-                      <img src="./images/code_svg.png" alt="">
-                      <div class="project-desription">
-                        <h3>To-Do Manager</h3>
-                        <p>Created a to-do list application with Django. Has user authentication and allows users to create, update, and delete individual tasks.</p>
-                        <div class="project-tools">
-                            <p>Python, Django, HTML, CSS, AWS EC2, Docker</p>
-                          </div>
-                        <div class="project-links">
-                            <a href=""><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-solid fa-link"></i></a>
-                        </div>
-                      </div>
-                </div>
-                <div class="project-item">
-                    <img src="./images/code_svg.png" alt="">
-                    <div class="project-desription">
-                      <h3>Project</h3>
-                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laborum quia, deserunt beatae earum quae voluptates! Eos, odit hic perferendis fuga doloremque vel sunt. Laborum tenetur amet alias facere recusandae.</p>
-                      <div class="project-tools">
-                        <p>Python</p>
-                      </div>
-                      <div class="project-links">
-                          <a href=""><i class="fa-brands fa-github"></i></a>
-                          <a href=""><i class="fa-solid fa-link"></i></a>
-                      </div>
+            <h2>Personal Projects</h2>
+            <div class="card-container">
+                <!-- Project 1 -->
+                <div class="card-item">
+                    <div class="card-image">
+                      <img src="./images/todoscreenshot.png" alt="">
                     </div>
-              </div>
-              <div class="project-item">
-                <img src="./images/code_svg.png" alt="">
-                <div class="project-desription">
-                  <h3>Project</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laborum quia, deserunt beatae earum quae voluptates! Eos, odit hic perferendis fuga doloremque vel sunt. Laborum tenetur amet alias facere recusandae.</p>
-                  <div class="project-tools">
-                    <p>Python</p>
-                  </div>
-                  <div class="project-links">
-                      <a href=""><i class="fa-brands fa-github"></i></a>
-                      <a href=""><i class="fa-solid fa-link"></i></a>
-                  </div>
+                    <div class="card-body">
+                        <h4>To-Do List</h4>
+                        <div class="card-categories">
+                            <span class="card-category">Django</span>
+                            <span class="card-category">Docker</span>
+                            <span class="card-category">HTML/CSS</span>
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                Created a to-do list website with Django that has user authentication and allows user to create, update, and delete tasks. 
+                            </p>
+                            <p>
+                                Containerized application with Docker and deployed on AWS EC2 instance. 
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-links">
+                                    <a href="https://github.com/jamesyoung-15/Todo-List-Django" target="_blank">
+                                       <i class="fa-brands fa-github"></i>
+                                    </a>
+                                    <a href="https://todo.jamesyy.info/" target="_blank">
+                                        <i class="fa-solid fa-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="project-item">
-                <img src="./images/code_svg.png" alt="">
-                <div class="project-desription">
-                  <h3>Project</h3>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore laborum quia, deserunt beatae earum quae voluptates! Eos, odit hic perferendis fuga doloremque vel sunt. Laborum tenetur amet alias facere recusandae.</p>
-                  <div class="project-tools">
-                    <p>Python</p>
-                  </div>
-                  <div class="project-links">
-                      <a href=""><i class="fa-brands fa-github"></i></a>
-                      <a href=""><i class="fa-solid fa-link"></i></a>
-                  </div>
+                <!-- Project 2 -->
+                <div class="card-item">
+                    <div class="card-image">
+                      <img src="./images/code_svg.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Tic-Tac-Toe Online Multiplayer</h4>
+                        <div class="card-categories">
+                            <span class="card-category">NodeJS</span>
+                            <span class="card-category">SocketIO</span>
+                            <span class="card-category">HTML/CSS</span>
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                Created a to-do list with Django that has user authentication and allows user to create, update, and delete tasks. 
+                            </p>
+                            <p>
+                                Containerized application with Docker and deployed on AWS EC2 instance. 
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-links">
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Project 3 -->
+                <div class="card-item">
+                    <div class="card-image">
+                      <img src="./images/final_photo1.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Mini-Robot Cleaner</h4>
+                        <div class="card-categories">
+                            <span class="card-category">C</span>
+                            <span class="card-category">STM32</span>
+                            <span class="card-category">Python</span>
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                Created a small robot car using a STM32 board as the MCU. Robot car has free roam mode with obstacle avoidance and manual mode with user control. Also sends temperature sensor remotely through UDP.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-links">
+                                    <a href="https://github.com/jamesyoung-15/Mini-Robot-Cleaner" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.youtube.com/watch?v=z4BqyFa29B0" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="card-item">
+                    <div class="card-image">
+                      <img src="./images/ttc-minimax.jpg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h4>Tic-Tac-Toe Mini-max AI</h4>
+                        <div class="card-categories">
+                            <span class="card-category">C++</span>
+                        </div>
+                        <div class="card-description">
+                            <p>
+                                Created a Tic-Tac-Toe terminal game with option to play AI that uses mini-max algorithm 
+                                to find the best possible move each turn.
+                            </p>
+                            <p>
+                                Uses tree data structure to store each board state when finding optimal moves.
+                            </p>
+                            <div class="card-footer">
+                                <div class="card-links">
+                                    <a href=""><i class="fa-brands fa-github"></i></a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>     
+        </section>
+        <!-- To-do: Create career timeline for past jobs -->
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <section class="footer">
+            <div class="footer-about">
+                <p>James' Portfolio (<a href="https://github.com/jamesyoung-15/jamesyoung-15.github.io" target="_blank">Website Code  <i class="fa-brands fa-github"></i></a>)</p>
             </div>
-                
+            <div class="footer-contact">
+                <a href=""><i class="fa-brands fa-github"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+                <a href=""><i class="fa-solid fa-file-pdf"></i></a>
             </div>
         </section>
-    </main>
-
-    <footer>
-        <div class="footer-about">
-            <p>James' Portfolio Website</p>
-            <a href="">Website Code  <i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="footer-contact">
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-            <a href=""><i class="fa-solid fa-file-pdf"></i></a>
-        </div>
     </footer>
+
+    <script src="./js/app.js"></script>
 
 </body>
 </html>
