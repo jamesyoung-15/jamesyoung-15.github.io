@@ -136,7 +136,8 @@ main{
 .projects{
     /* height: 55vh; */
     text-align: center;
-    background-color: var(--ctp-mocha-mantle);
+    /* background-color: var(--ctp-mocha-mantle); */
+    background-color: var(--ctp-mocha-crust);
     padding: 30px 10% 30px;
 }
 .projects h2{
@@ -275,8 +276,10 @@ main{
 /* Career section START */
 
 .career{
-    background-color: var(--ctp-mocha-crust);
+    /* background-color: var(--ctp-mocha-crust); */
+    background-color: var(--ctp-mocha-mantle);
     padding: 25px 0 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .career h2{
