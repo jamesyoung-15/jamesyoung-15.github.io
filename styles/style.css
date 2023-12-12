@@ -81,7 +81,8 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 35vh;
+    /* min-height: 35vh; */
+    min-height: 60vh;
     max-width: 60%;
     margin: auto;
     flex-direction: column;
@@ -139,6 +140,7 @@ main{
     /* background-color: var(--ctp-mocha-mantle); */
     background-color: var(--ctp-mocha-crust);
     padding: 30px 10% 30px;
+    min-height: 80vh;
 }
 .projects h2{
     font-weight: 600;
@@ -280,6 +282,7 @@ main{
     background-color: var(--ctp-mocha-mantle);
     padding: 25px 0 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 50vh;
 }
 
 .career h2{
